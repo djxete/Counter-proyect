@@ -1,0 +1,97 @@
+/* =========== GOOGLE FONTS ========================= */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    background-color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+.container{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.container h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.container span{
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.button-container button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+button{
+    color: black;
+    background-color:aliceblue;
+    border-radius: 10%;
+    padding: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    
+}
+
+button:hover{
+    background-color: black;
+    color: #ffffff;
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+
+/* ======= MEDIA QUERIES ==========*/
+
+@media(max-width: 500px){
+    .button-container button{
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+    
+    button{
+        padding: 8px;
+        border-radius: 10%;
+        padding: 8px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        
+    }
+}
+
+/* ==== CLASES AÑADIDAS DINÁMICAMENTE EN JAVASCRIPT ====*/
+
+.green{
+    color: rgb(13, 212, 13);
+}
+.red{
+    color: rgb(231, 14, 14);
+}
