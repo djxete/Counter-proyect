@@ -57,3 +57,74 @@ buttons.forEach(button => {
     })
 
 });
+
+
+
+
+// //============ OTRA FORMA DE HACERLO =============
+
+
+// // ================== VARIABLES ==========================
+
+
+// const botones = document.querySelectorAll("button");
+// let count = document.querySelector("#count");
+// let contador = 0;
+
+
+
+// // ================== EVENTS ==========================
+
+
+
+// botones.forEach(boton => {
+
+//     boton.addEventListener("click", () => {
+//         if (boton.innerHTML === "decrease") {
+//             contador--;
+//             count.innerHTML = contador;
+//         }
+//         if (boton.innerHTML === "reset") {
+//             contador = 0;
+//             count.innerHTML = 0;
+//         }
+//         if (boton.innerHTML === "increase") {
+//             contador++;
+//             count.innerHTML = contador;
+
+//         }
+
+//         if (contador < 0) {
+//             colorRed(count);
+//         }
+//         if (contador === 0) {
+//             colorBlack(count);
+//         }
+//         if (contador >= 1) {
+//             colorGreen(count);
+//         }
+
+
+
+//     })
+
+
+
+// })
+
+
+
+// // ================== FUNCTIONS ==========================
+
+// function colorRed(count) {
+//     count.classList.add("red");
+// }
+
+// function colorGreen(count) {
+//     count.classList.add("green");
+// }
+
+// function colorBlack(count) {
+//     count.classList.remove("green");
+//     count.classList.remove("red");
+// }
